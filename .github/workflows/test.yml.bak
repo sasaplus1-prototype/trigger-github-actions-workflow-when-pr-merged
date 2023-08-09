@@ -2,8 +2,10 @@ name: test
 
 on:
   pull_request:
-    branches:
-      - 'release/v*.*.*'
+    types:
+      - closed
+#   branches:
+#     - 'release/v*.*.*'
 
 jobs:
   test:
